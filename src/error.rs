@@ -1,5 +1,5 @@
 use actix_web::{http::StatusCode, HttpResponse, ResponseError};
-use std::fmt::Debug;
+use std::{fmt::Debug, num::TryFromIntError};
 
 /// Error to be returned by server functions. Since it implements ResponseError,
 /// there is no need to manually handle the errors in each API method.
@@ -8,6 +8,7 @@ pub enum Error {
     #[allow(unused)]
     Other(String),
     Sqlx(sqlx::Error),
+    Conversion(TryFromIntError),
 }
 
 impl std::fmt::Display for Error {
@@ -21,6 +22,7 @@ impl ResponseError for Error {
         match &self {
             Self::Other(_) => StatusCode::INTERNAL_SERVER_ERROR,
             Self::Sqlx(_) => StatusCode::INTERNAL_SERVER_ERROR,
+            Self::Conversion(_) => StatusCode::BAD_REQUEST,
         }
     }
 
@@ -28,6 +30,7 @@ impl ResponseError for Error {
         let msg = match &self {
             Self::Other(err) => format!("Another error has occurred: {err:?}"),
             Self::Sqlx(err) => format!("Database error has occurred: {err:?}"),
+            Self::Conversion(err) => format!("Bad Request: {err:?}"),
         };
         HttpResponse::build(self.status_code()).body(msg)
     }
@@ -37,5 +40,9 @@ impl Error {
     /// Simplify error handling when using `.or_else`
     pub fn sqlx<A>(err: sqlx::Error) -> Result<A, Error> {
         Err(Self::Sqlx(err))
+    }
+
+    pub fn conversion<A>(err: TryFromIntError) -> Result<A, Error> {
+        Err(Self::Conversion(err))
     }
 }
