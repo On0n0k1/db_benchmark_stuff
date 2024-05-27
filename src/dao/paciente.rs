@@ -369,4 +369,94 @@ impl Paciente {
         let paciente: Paciente = paciente.into();
         Ok(paciente)
     }
+
+    pub async fn read_many(
+        quantity: i32,
+        offset: i32,
+        pool: &MssqlPool,
+    ) -> Result<Vec<Paciente>, Error> {
+        let mut conn: PoolConnection<Mssql> = pool.acquire().await.or_else(Error::sqlx)?;
+        let pacientes: Vec<PacienteTable> = sqlx::query_as(
+            r#"
+        SELECT 
+            ID,
+            NOME,
+            ENDERECO,
+            BAIRRO,
+            CEP,
+            CIDADE,
+            ESTADO,
+            TELEFONE,
+            CONTATO,
+            CPF,
+            IDENTIDADE,
+            SEXO,
+            ESTADOCIVIL,
+            GSRH,
+            CONVENIO,
+            PLANO,
+            TITULAR,
+            NUMEROCART,
+            EMAIL,
+            OBSERVACAO,
+            CARTEIRA,
+            CLASSIFICACAO,
+            IDADE,
+            CODIGOEXTERNO,
+            MATRICULA,
+            NUMERO,
+            MEDICO,
+            IMPRIMECARTEIRA,
+            INATIVO,
+            NACIONALIDADE,
+            ORIGEM,
+            CHAVE_SLINE,
+            NOME_FONETICO,
+            COR,
+            OBS_CLINICA,
+            NUMERO_CNS,
+            NOME_PAI,
+            NOME_MAE,
+            COD_IBGE,
+            DOCUMENTO_RESP,
+            SEGUNDO_NOME,
+            CELULAR,
+            LOCAL_TRABALHO,
+            BLOQUEADO,
+            RACA,
+            ESPECIE,
+            PROPRIETARIO,
+            COD_EMPRESA,
+            COD_UNIDADE,
+            EMPRESA,
+            ESTRUTURA_EMPRESA,
+            ETNIA,
+            TIPO_LOGRADOURO,
+            NUMERO_ENDERECO,
+            COMPLEMENTO,
+            EH_DIABETICO,
+            NATURALIDADE,
+            NOME_SOCIAL,
+            MOTIVO_BLOQUEIO,
+            CNH,
+            CATEGORIA_CNH,
+            ENVIA_WHATSAPP,
+            WHATSAPP,
+            NIF,
+            COD_ESPECIE,
+            COD_RACA,
+            PASSAPORTE
+         FROM PACIENTE 
+         ORDER BY ID ASC
+         OFFSET @P1 ROWS
+         FETCH NEXT @P2 ROWS ONLY;"#,
+        )
+        .bind(offset)
+        .bind(quantity)
+        .fetch_all(&mut conn)
+        .await
+        .or_else(Error::sqlx)?;
+        let pacientes: Vec<Paciente> = pacientes.into_iter().map(Into::into).collect();
+        Ok(pacientes)
+    }
 }
