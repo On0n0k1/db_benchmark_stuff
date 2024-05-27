@@ -1,6 +1,5 @@
 #![allow(non_snake_case)]
 use crate::Error;
-// use chrono::NaiveDate;
 use serde::{Deserialize, Serialize};
 use sqlx::{pool::PoolConnection, Mssql, MssqlPool};
 
@@ -17,8 +16,6 @@ pub struct PacienteTable {
     CONTATO: Option<String>,
     CPF: Option<String>,
     IDENTIDADE: Option<String>,
-    // modified
-    // DATANASCIMENTO: String,
     SEXO: String,
     ESTADOCIVIL: Option<String>,
     GSRH: Option<String>,
@@ -39,14 +36,10 @@ pub struct PacienteTable {
     INATIVO: String,
     NACIONALIDADE: Option<String>,
     ORIGEM: Option<String>,
-    // modified
-    // DATA: String,
     CHAVE_SLINE: Option<String>,
     NOME_FONETICO: String,
     COR: Option<String>,
     OBS_CLINICA: Option<String>,
-    // modified
-    // VALIDADE_CARTEIRA: Option<String>,
     NUMERO_CNS: Option<String>,
     NOME_PAI: Option<String>,
     NOME_MAE: Option<String>,
@@ -73,8 +66,6 @@ pub struct PacienteTable {
     MOTIVO_BLOQUEIO: Option<String>,
     CNH: Option<String>,
     CATEGORIA_CNH: Option<String>,
-    // modified
-    // VENCIMENTO_CNH: Option<String>,
     ENVIA_WHATSAPP: Option<String>,
     WHATSAPP: Option<String>,
     NIF: Option<String>,
@@ -153,20 +144,6 @@ impl From<PacienteTable> for Paciente {
         let COD_RACA: Option<i32> = value.COD_RACA;
         let PASSAPORTE: Option<String> = value.PASSAPORTE;
 
-        // let DATANASCIMENTO: String = value.DATANASCIMENTO;
-        // let DATANASCIMENTO: NaiveDate =
-        //     NaiveDate::parse_from_str(&DATANASCIMENTO, "%Y-%m-%d").unwrap();
-        // let DATA: String = value.DATA;
-        // let DATA: NaiveDate = NaiveDate::parse_from_str(&DATA, "%Y-%m-%d").unwrap();
-        // let VALIDADE_CARTEIRA: Option<String> = value.VALIDADE_CARTEIRA;
-        // let VALIDADE_CARTEIRA: Option<NaiveDate> =
-        //     VALIDADE_CARTEIRA.map(|value| NaiveDate::parse_from_str(&value, "%Y-%m-%d").unwrap());
-        // let VALIDADE_CARTEIRA = NaiveDate::parse_from_str(&VALIDADE_CARTEIRA, "%Y-%m-%d").unwrap();
-        // let VENCIMENTO_CNH = value.VENCIMENTO_CNH;
-        // let VENCIMENTO_CNH = NaiveDate::parse_from_str(&VENCIMENTO_CNH, "%Y-%m-%d").unwrap();
-        // let VENCIMENTO_CNH: Option<NaiveDate> =
-        //     VENCIMENTO_CNH.map(|value| NaiveDate::parse_from_str(&value, "%Y-%m-%d").unwrap());
-
         Self {
             ID,
             NOME,
@@ -179,7 +156,6 @@ impl From<PacienteTable> for Paciente {
             CONTATO,
             CPF,
             IDENTIDADE,
-            // DATANASCIMENTO,
             SEXO,
             ESTADOCIVIL,
             GSRH,
@@ -200,12 +176,10 @@ impl From<PacienteTable> for Paciente {
             INATIVO,
             NACIONALIDADE,
             ORIGEM,
-            // DATA,
             CHAVE_SLINE,
             NOME_FONETICO,
             COR,
             OBS_CLINICA,
-            // VALIDADE_CARTEIRA,
             NUMERO_CNS,
             NOME_PAI,
             NOME_MAE,
@@ -232,7 +206,6 @@ impl From<PacienteTable> for Paciente {
             MOTIVO_BLOQUEIO,
             CNH,
             CATEGORIA_CNH,
-            // VENCIMENTO_CNH,
             ENVIA_WHATSAPP,
             WHATSAPP,
             NIF,
@@ -256,7 +229,6 @@ pub struct Paciente {
     CONTATO: Option<String>,
     CPF: Option<String>,
     IDENTIDADE: Option<String>,
-    // DATANASCIMENTO: NaiveDate,
     SEXO: String,
     ESTADOCIVIL: Option<String>,
     GSRH: Option<String>,
@@ -277,12 +249,10 @@ pub struct Paciente {
     INATIVO: String,
     NACIONALIDADE: Option<String>,
     ORIGEM: Option<String>,
-    // DATA: NaiveDate,
     CHAVE_SLINE: Option<String>,
     NOME_FONETICO: String,
     COR: Option<String>,
     OBS_CLINICA: Option<String>,
-    // VALIDADE_CARTEIRA: Option<NaiveDate>,
     NUMERO_CNS: Option<String>,
     NOME_PAI: Option<String>,
     NOME_MAE: Option<String>,
@@ -309,7 +279,6 @@ pub struct Paciente {
     MOTIVO_BLOQUEIO: Option<String>,
     CNH: Option<String>,
     CATEGORIA_CNH: Option<String>,
-    // VENCIMENTO_CNH: Option<NaiveDate>,
     ENVIA_WHATSAPP: Option<String>,
     WHATSAPP: Option<String>,
     NIF: Option<String>,
