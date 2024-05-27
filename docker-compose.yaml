@@ -17,3 +17,5 @@ services:
     container_name: backend
     ports:
       - "9090:9090"
+    volumes:
+      - ./src/:/app/db_benchmark_stuff/src/:ro
