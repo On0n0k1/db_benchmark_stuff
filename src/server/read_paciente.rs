@@ -11,7 +11,8 @@ pub async fn read_paciente(
 ) -> Result<impl Responder, Error> {
     let id: i32 = id.into_inner() as i32;
     let dao: Arc<Arc<Dao>> = dao.into_inner();
-    let paciente: Paciente = Paciente::read(id, dao.pool()).await?;
+    // let paciente: Paciente = Paciente::read(id, dao.pool()).await?;
+    let paciente: Paciente = Paciente::tiberius_read(id, dao.config()).await?;
     let result: HttpResponse = HttpResponse::Ok().json(paciente);
     Ok(result)
 }

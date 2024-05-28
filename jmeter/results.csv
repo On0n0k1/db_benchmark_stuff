@@ -1,0 +1,501 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1716837781601,1,Get Paciente,404,Not Found,Thread Group 1-1,text,false,,151,128,1,1,http://localhost:9090/paciente/id,1,0,0
+1716837781603,1,Get Paciente,200,OK,Thread Group 1-1,text,true,,1256,127,1,1,http://localhost:9090/paciente/1,1,0,0
+1716837781604,1,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-1,text,false,,2067,0,1,1,http://localhost:9090/paciente/6,0,0,0
+1716837781605,2,Get Paciente,200,OK,Thread Group 1-1,text,true,,1414,128,1,1,http://localhost:9090/paciente/31,2,0,0
+1716837781607,1,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-1,text,false,,2067,0,1,1,http://localhost:9090/paciente/32,0,0,0
+1716837781851,197,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-2,text,false,,2067,0,1,1,http://localhost:9090/paciente/34,0,0,1
+1716837782048,3,Get Paciente,200,OK,Thread Group 1-2,text,true,,1254,128,1,1,http://localhost:9090/paciente/38,3,0,0
+1716837782051,1,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-2,text,false,,2067,0,1,1,http://localhost:9090/paciente/44,0,0,0
+1716837782052,2,Get Paciente,200,OK,Thread Group 1-2,text,true,,1350,128,1,1,http://localhost:9090/paciente/48,2,0,0
+1716837782054,1,Get Paciente,200,OK,Thread Group 1-2,text,true,,1410,128,1,1,http://localhost:9090/paciente/51,1,0,0
+1716837782101,1,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-3,text,false,,2067,0,1,1,http://localhost:9090/paciente/52,0,0,0
+1716837782102,2,Get Paciente,200,OK,Thread Group 1-3,text,true,,1355,133,1,1,http://localhost:9090/paciente/6000002,2,0,0
+1716837782105,0,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-3,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000003,0,0,0
+1716837782105,2,Get Paciente,200,OK,Thread Group 1-3,text,true,,1399,133,1,1,http://localhost:9090/paciente/6000004,2,0,0
+1716837782107,1,Get Paciente,200,OK,Thread Group 1-3,text,true,,1425,133,1,1,http://localhost:9090/paciente/6000010,1,0,0
+1716837782351,2,Get Paciente,200,OK,Thread Group 1-4,text,true,,1411,133,1,1,http://localhost:9090/paciente/6000013,2,0,1
+1716837782353,1,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-4,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000014,0,0,0
+1716837782354,3,Get Paciente,200,OK,Thread Group 1-4,text,true,,1372,133,1,1,http://localhost:9090/paciente/6000015,3,0,0
+1716837782357,2,Get Paciente,200,OK,Thread Group 1-4,text,true,,1259,133,1,1,http://localhost:9090/paciente/6000016,2,0,0
+1716837782359,1,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-4,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000018,0,0,0
+1716837782601,1,Get Paciente,200,OK,Thread Group 1-5,text,true,,1356,133,1,1,http://localhost:9090/paciente/6000023,1,0,0
+1716837782602,1,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-5,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000024,0,0,0
+1716837782603,3,Get Paciente,200,OK,Thread Group 1-5,text,true,,1345,133,1,1,http://localhost:9090/paciente/6000030,3,0,1
+1716837782606,1,Get Paciente,200,OK,Thread Group 1-5,text,true,,1341,133,1,1,http://localhost:9090/paciente/6000031,1,0,0
+1716837782607,1,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-5,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000032,0,0,0
+1716837782851,191,Get Paciente,200,OK,Thread Group 1-6,text,true,,1351,133,1,1,http://localhost:9090/paciente/6000033,191,0,0
+1716837783043,1,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-6,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000034,0,0,0
+1716837783044,3,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-6,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000035,0,0,0
+1716837783047,2,Get Paciente,200,OK,Thread Group 1-6,text,true,,1365,133,1,1,http://localhost:9090/paciente/6000036,2,0,0
+1716837783049,1,Get Paciente,200,OK,Thread Group 1-6,text,true,,1361,133,1,1,http://localhost:9090/paciente/6000037,1,0,0
+1716837783101,2,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-7,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000038,0,0,0
+1716837783103,3,Get Paciente,200,OK,Thread Group 1-7,text,true,,1347,133,1,1,http://localhost:9090/paciente/6000039,3,0,0
+1716837783106,1,Get Paciente,200,OK,Thread Group 1-7,text,true,,1352,133,1,1,http://localhost:9090/paciente/6000040,1,0,0
+1716837783107,0,Get Paciente,200,OK,Thread Group 1-7,text,true,,1385,133,1,1,http://localhost:9090/paciente/6000041,0,0,0
+1716837783108,1,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-7,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000042,0,0,0
+1716837783351,180,Get Paciente,200,OK,Thread Group 1-8,text,true,,1398,133,1,1,http://localhost:9090/paciente/6000043,180,0,1
+1716837783531,1,Get Paciente,200,OK,Thread Group 1-8,text,true,,1366,133,1,1,http://localhost:9090/paciente/6000045,1,0,0
+1716837783532,0,Get Paciente,200,OK,Thread Group 1-8,text,true,,1337,133,1,1,http://localhost:9090/paciente/6000046,0,0,0
+1716837783532,1,Get Paciente,200,OK,Thread Group 1-8,text,true,,1369,133,1,1,http://localhost:9090/paciente/6000048,1,0,0
+1716837783533,0,Get Paciente,200,OK,Thread Group 1-8,text,true,,1357,133,1,1,http://localhost:9090/paciente/6000049,0,0,0
+1716837783601,1,Get Paciente,200,OK,Thread Group 1-9,text,true,,1265,133,1,1,http://localhost:9090/paciente/6000050,1,0,0
+1716837783602,1,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-9,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000051,0,0,0
+1716837783603,2,Get Paciente,200,OK,Thread Group 1-9,text,true,,1284,133,1,1,http://localhost:9090/paciente/6000052,2,0,0
+1716837783605,1,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-9,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000054,0,0,0
+1716837783606,1,Get Paciente,200,OK,Thread Group 1-9,text,true,,1356,133,1,1,http://localhost:9090/paciente/6000055,1,0,0
+1716837783851,2,Get Paciente,200,OK,Thread Group 1-10,text,true,,1391,133,1,1,http://localhost:9090/paciente/6000056,2,0,1
+1716837783853,0,Get Paciente,200,OK,Thread Group 1-10,text,true,,1265,133,1,1,http://localhost:9090/paciente/6000057,0,0,0
+1716837783854,0,Get Paciente,200,OK,Thread Group 1-10,text,true,,1372,133,1,1,http://localhost:9090/paciente/6000058,0,0,0
+1716837783854,1,Get Paciente,200,OK,Thread Group 1-10,text,true,,1265,133,1,1,http://localhost:9090/paciente/6000059,1,0,0
+1716837783855,2,Get Paciente,200,OK,Thread Group 1-10,text,true,,1259,133,1,1,http://localhost:9090/paciente/6000060,2,0,0
+1716837784101,2,Get Paciente,200,OK,Thread Group 1-11,text,true,,1265,133,1,1,http://localhost:9090/paciente/6000061,2,0,1
+1716837784103,1,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-11,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000062,0,0,0
+1716837784104,1,Get Paciente,200,OK,Thread Group 1-11,text,true,,1303,133,1,1,http://localhost:9090/paciente/6000063,1,0,0
+1716837784105,1,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-11,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000065,0,0,0
+1716837784107,3,Get Paciente,200,OK,Thread Group 1-11,text,true,,1295,133,1,1,http://localhost:9090/paciente/6000066,3,0,0
+1716837784350,2,Get Paciente,200,OK,Thread Group 1-12,text,true,,1397,133,1,1,http://localhost:9090/paciente/6000067,2,0,1
+1716837784352,1,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-12,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000071,0,0,0
+1716837784353,3,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-12,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000072,0,0,0
+1716837784356,3,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-12,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000073,0,0,0
+1716837784359,2,Get Paciente,200,OK,Thread Group 1-12,text,true,,1324,133,1,1,http://localhost:9090/paciente/6000074,2,0,0
+1716837784601,2,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-13,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000075,0,0,0
+1716837784603,3,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-13,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000076,0,0,0
+1716837784606,2,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-13,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000077,0,0,0
+1716837784609,2,Get Paciente,200,OK,Thread Group 1-13,text,true,,1338,133,1,1,http://localhost:9090/paciente/6000078,2,0,0
+1716837784611,2,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-13,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000079,0,0,0
+1716837784852,1,Get Paciente,200,OK,Thread Group 1-14,text,true,,1387,133,1,1,http://localhost:9090/paciente/6000080,1,0,0
+1716837784853,1,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-14,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000081,0,0,0
+1716837784854,2,Get Paciente,200,OK,Thread Group 1-14,text,true,,1382,133,1,1,http://localhost:9090/paciente/6000084,2,0,0
+1716837784856,1,Get Paciente,200,OK,Thread Group 1-14,text,true,,1341,133,1,1,http://localhost:9090/paciente/6000086,1,0,0
+1716837784857,0,Get Paciente,200,OK,Thread Group 1-14,text,true,,1318,133,1,1,http://localhost:9090/paciente/6000089,0,0,0
+1716837785102,1,Get Paciente,200,OK,Thread Group 1-15,text,true,,1411,133,1,1,http://localhost:9090/paciente/6000090,1,0,0
+1716837785103,1,Get Paciente,200,OK,Thread Group 1-15,text,true,,1353,133,1,1,http://localhost:9090/paciente/6000091,1,0,0
+1716837785104,0,Get Paciente,200,OK,Thread Group 1-15,text,true,,1302,133,1,1,http://localhost:9090/paciente/6000092,0,0,0
+1716837785104,1,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-15,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000094,0,0,0
+1716837785105,2,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-15,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000095,0,0,0
+1716837785351,155,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-16,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000098,0,0,0
+1716837785507,2,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-16,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000101,0,0,0
+1716837785509,2,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-16,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000104,0,0,0
+1716837785511,2,Get Paciente,200,OK,Thread Group 1-16,text,true,,1260,133,1,1,http://localhost:9090/paciente/6000105,2,0,1
+1716837785513,1,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-16,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000106,0,0,0
+1716837785601,3,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-17,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000107,0,0,0
+1716837785604,2,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-17,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000108,0,0,0
+1716837785606,233,Get Paciente,200,OK,Thread Group 1-17,text,true,,1270,133,1,1,http://localhost:9090/paciente/6000111,233,0,0
+1716837785839,1,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-17,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000112,0,0,0
+1716837785841,3,Get Paciente,200,OK,Thread Group 1-17,text,true,,1292,133,1,1,http://localhost:9090/paciente/6000113,3,0,0
+1716837785851,1,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-18,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000114,0,0,0
+1716837785852,3,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-18,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000115,0,0,1
+1716837785855,3,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-18,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000117,0,0,1
+1716837785858,4,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-18,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000118,0,0,0
+1716837785862,2,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-18,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000119,0,0,0
+1716837786101,4,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-19,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000121,0,0,1
+1716837786105,3,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-19,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000122,0,0,1
+1716837786109,3,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-19,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000123,0,0,0
+1716837786112,3,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-19,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000124,0,0,0
+1716837786115,2,Get Paciente,200,OK,Thread Group 1-19,text,true,,1392,133,1,1,http://localhost:9090/paciente/6000125,2,0,0
+1716837786350,2,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-20,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000128,0,0,1
+1716837786352,22,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-20,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000130,0,0,0
+1716837786374,2,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-20,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000136,0,0,0
+1716837786377,2,Get Paciente,200,OK,Thread Group 1-20,text,true,,1372,133,1,1,http://localhost:9090/paciente/6000137,2,0,0
+1716837786380,0,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-20,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000143,0,0,0
+1716837786600,4,Get Paciente,200,OK,Thread Group 1-21,text,true,,1309,133,1,1,http://localhost:9090/paciente/6000144,4,0,1
+1716837786604,1,Get Paciente,200,OK,Thread Group 1-21,text,true,,1261,133,1,1,http://localhost:9090/paciente/6000146,1,0,0
+1716837786605,1,Get Paciente,200,OK,Thread Group 1-21,text,true,,1272,133,1,1,http://localhost:9090/paciente/6000147,1,0,0
+1716837786606,1,Get Paciente,200,OK,Thread Group 1-21,text,true,,1393,133,1,1,http://localhost:9090/paciente/6000149,1,0,0
+1716837786607,1,Get Paciente,200,OK,Thread Group 1-21,text,true,,1421,133,1,1,http://localhost:9090/paciente/6000150,1,0,0
+1716837786852,2,Get Paciente,200,OK,Thread Group 1-22,text,true,,1273,133,1,1,http://localhost:9090/paciente/6000151,2,0,0
+1716837786854,1,Get Paciente,200,OK,Thread Group 1-22,text,true,,1272,133,1,1,http://localhost:9090/paciente/6000152,1,0,0
+1716837786855,3,Get Paciente,200,OK,Thread Group 1-22,text,true,,1273,133,1,1,http://localhost:9090/paciente/6000153,3,0,0
+1716837786858,0,Get Paciente,200,OK,Thread Group 1-22,text,true,,1272,133,1,1,http://localhost:9090/paciente/6000154,0,0,0
+1716837786858,1,Get Paciente,200,OK,Thread Group 1-22,text,true,,1426,133,1,1,http://localhost:9090/paciente/6000155,1,0,0
+1716837787102,2,Get Paciente,200,OK,Thread Group 1-23,text,true,,1377,133,1,1,http://localhost:9090/paciente/6000156,2,0,1
+1716837787104,1,Get Paciente,200,OK,Thread Group 1-23,text,true,,1272,133,1,1,http://localhost:9090/paciente/6000158,1,0,0
+1716837787105,1,Get Paciente,200,OK,Thread Group 1-23,text,true,,1373,133,1,1,http://localhost:9090/paciente/6000159,1,0,0
+1716837787106,0,Get Paciente,200,OK,Thread Group 1-23,text,true,,1384,133,1,1,http://localhost:9090/paciente/6000160,0,0,0
+1716837787107,0,Get Paciente,200,OK,Thread Group 1-23,text,true,,1359,133,1,1,http://localhost:9090/paciente/6000161,0,0,0
+1716837787351,2,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-24,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000164,0,0,0
+1716837787353,1,Get Paciente,200,OK,Thread Group 1-24,text,true,,1337,133,1,1,http://localhost:9090/paciente/6000165,1,0,0
+1716837787354,1,Get Paciente,200,OK,Thread Group 1-24,text,true,,1336,133,1,1,http://localhost:9090/paciente/6000166,1,0,0
+1716837787355,3,Get Paciente,200,OK,Thread Group 1-24,text,true,,1317,133,1,1,http://localhost:9090/paciente/6000167,3,0,0
+1716837787358,1,Get Paciente,200,OK,Thread Group 1-24,text,true,,1361,133,1,1,http://localhost:9090/paciente/6000168,1,0,0
+1716837787601,1,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-25,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000174,0,0,0
+1716837787602,1,Get Paciente,200,OK,Thread Group 1-25,text,true,,1368,133,1,1,http://localhost:9090/paciente/6000176,1,0,0
+1716837787603,1,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-25,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000177,0,0,0
+1716837787604,2,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-25,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000178,0,0,0
+1716837787606,1,Get Paciente,200,OK,Thread Group 1-25,text,true,,1360,133,1,1,http://localhost:9090/paciente/6000179,1,0,0
+1716837787852,1,Get Paciente,200,OK,Thread Group 1-26,text,true,,1381,133,1,1,http://localhost:9090/paciente/6000180,1,0,0
+1716837787853,1,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-26,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000181,0,0,0
+1716837787854,3,Get Paciente,200,OK,Thread Group 1-26,text,true,,1355,133,1,1,http://localhost:9090/paciente/6000182,3,0,0
+1716837787857,1,Get Paciente,200,OK,Thread Group 1-26,text,true,,1339,133,1,1,http://localhost:9090/paciente/6000183,1,0,0
+1716837787858,0,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-26,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000184,0,0,0
+1716837788102,4,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-27,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000185,0,0,0
+1716837788106,2,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-27,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000186,0,0,0
+1716837788109,2,Get Paciente,200,OK,Thread Group 1-27,text,true,,1368,133,1,1,http://localhost:9090/paciente/6000189,2,0,0
+1716837788111,1,Get Paciente,200,OK,Thread Group 1-27,text,true,,1352,133,1,1,http://localhost:9090/paciente/6000191,1,0,0
+1716837788112,1,Get Paciente,200,OK,Thread Group 1-27,text,true,,1319,133,1,1,http://localhost:9090/paciente/6000193,1,0,0
+1716837788351,1,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-28,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000194,0,0,0
+1716837788353,3,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-28,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000195,0,0,0
+1716837788356,3,Get Paciente,200,OK,Thread Group 1-28,text,true,,1370,133,1,1,http://localhost:9090/paciente/6000196,3,0,0
+1716837788359,0,Get Paciente,200,OK,Thread Group 1-28,text,true,,1316,133,1,1,http://localhost:9090/paciente/6000197,0,0,0
+1716837788359,1,Get Paciente,200,OK,Thread Group 1-28,text,true,,1373,133,1,1,http://localhost:9090/paciente/6000198,1,0,0
+1716837788601,2,Get Paciente,200,OK,Thread Group 1-29,text,true,,1338,133,1,1,http://localhost:9090/paciente/6000199,2,0,0
+1716837788603,0,Get Paciente,200,OK,Thread Group 1-29,text,true,,1371,133,1,1,http://localhost:9090/paciente/6000200,0,0,0
+1716837788604,0,Get Paciente,200,OK,Thread Group 1-29,text,true,,1351,133,1,1,http://localhost:9090/paciente/6000201,0,0,0
+1716837788604,1,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-29,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000203,0,0,0
+1716837788605,3,Get Paciente,200,OK,Thread Group 1-29,text,true,,1375,133,1,1,http://localhost:9090/paciente/6000204,3,0,0
+1716837788851,2,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-30,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000205,0,0,0
+1716837788853,3,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-30,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000206,0,0,0
+1716837788857,2,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-30,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000207,0,0,0
+1716837788860,2,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-30,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000209,0,0,0
+1716837788862,3,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-30,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000210,0,0,0
+1716837789102,4,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-31,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000211,0,0,0
+1716837789106,3,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-31,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000212,0,0,0
+1716837789109,3,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-31,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000213,0,0,0
+1716837789112,2,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-31,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000214,0,0,0
+1716837789114,3,Get Paciente,200,OK,Thread Group 1-31,text,true,,1414,133,1,1,http://localhost:9090/paciente/6000215,3,0,0
+1716837789350,2,Get Paciente,200,OK,Thread Group 1-32,text,true,,1372,133,1,1,http://localhost:9090/paciente/6000216,2,0,1
+1716837789352,2,Get Paciente,200,OK,Thread Group 1-32,text,true,,1367,133,1,1,http://localhost:9090/paciente/6000217,2,0,0
+1716837789354,1,Get Paciente,200,OK,Thread Group 1-32,text,true,,1374,133,1,1,http://localhost:9090/paciente/6000219,1,0,0
+1716837789355,0,Get Paciente,200,OK,Thread Group 1-32,text,true,,1350,133,1,1,http://localhost:9090/paciente/6000220,0,0,0
+1716837789355,1,Get Paciente,200,OK,Thread Group 1-32,text,true,,1288,133,1,1,http://localhost:9090/paciente/6000221,1,0,0
+1716837789600,2,Get Paciente,200,OK,Thread Group 1-33,text,true,,1361,133,1,1,http://localhost:9090/paciente/6000222,2,0,1
+1716837789602,0,Get Paciente,200,OK,Thread Group 1-33,text,true,,1323,133,1,1,http://localhost:9090/paciente/6000223,0,0,0
+1716837789602,1,Get Paciente,200,OK,Thread Group 1-33,text,true,,1366,133,1,1,http://localhost:9090/paciente/6000224,1,0,0
+1716837789603,0,Get Paciente,200,OK,Thread Group 1-33,text,true,,1288,133,1,1,http://localhost:9090/paciente/6000225,0,0,0
+1716837789603,0,Get Paciente,200,OK,Thread Group 1-33,text,true,,1378,133,1,1,http://localhost:9090/paciente/6000226,0,0,0
+1716837789851,1,Get Paciente,200,OK,Thread Group 1-34,text,true,,1396,133,1,1,http://localhost:9090/paciente/6000227,1,0,0
+1716837789852,1,Get Paciente,200,OK,Thread Group 1-34,text,true,,1313,133,1,1,http://localhost:9090/paciente/6000228,1,0,0
+1716837789853,0,Get Paciente,200,OK,Thread Group 1-34,text,true,,1325,133,1,1,http://localhost:9090/paciente/6000229,0,0,0
+1716837789853,3,Get Paciente,200,OK,Thread Group 1-34,text,true,,1288,133,1,1,http://localhost:9090/paciente/6000230,3,0,0
+1716837789856,1,Get Paciente,200,OK,Thread Group 1-34,text,true,,1317,133,1,1,http://localhost:9090/paciente/6000231,1,0,0
+1716837790101,1,Get Paciente,200,OK,Thread Group 1-35,text,true,,1363,133,1,1,http://localhost:9090/paciente/6000232,1,0,0
+1716837790102,1,Get Paciente,200,OK,Thread Group 1-35,text,true,,1345,133,1,1,http://localhost:9090/paciente/6000233,1,0,0
+1716837790103,1,Get Paciente,200,OK,Thread Group 1-35,text,true,,1302,133,1,1,http://localhost:9090/paciente/6000234,1,0,0
+1716837790104,0,Get Paciente,200,OK,Thread Group 1-35,text,true,,1350,133,1,1,http://localhost:9090/paciente/6000235,0,0,0
+1716837790104,1,Get Paciente,200,OK,Thread Group 1-35,text,true,,1337,133,1,1,http://localhost:9090/paciente/6000236,1,0,0
+1716837790352,2,Get Paciente,200,OK,Thread Group 1-36,text,true,,1336,133,1,1,http://localhost:9090/paciente/6000237,2,0,0
+1716837790354,1,Get Paciente,200,OK,Thread Group 1-36,text,true,,1366,133,1,1,http://localhost:9090/paciente/6000238,1,0,0
+1716837790355,0,Get Paciente,200,OK,Thread Group 1-36,text,true,,1367,133,1,1,http://localhost:9090/paciente/6000239,0,0,0
+1716837790355,1,Get Paciente,200,OK,Thread Group 1-36,text,true,,1353,133,1,1,http://localhost:9090/paciente/6000240,1,0,0
+1716837790356,1,Get Paciente,200,OK,Thread Group 1-36,text,true,,1359,133,1,1,http://localhost:9090/paciente/6000241,1,0,0
+1716837790602,2,Get Paciente,200,OK,Thread Group 1-37,text,true,,1372,133,1,1,http://localhost:9090/paciente/6000242,2,0,0
+1716837790604,0,Get Paciente,200,OK,Thread Group 1-37,text,true,,1322,133,1,1,http://localhost:9090/paciente/6000244,0,0,0
+1716837790604,1,Get Paciente,200,OK,Thread Group 1-37,text,true,,1349,133,1,1,http://localhost:9090/paciente/6000245,1,0,0
+1716837790605,1,Get Paciente,200,OK,Thread Group 1-37,text,true,,1338,133,1,1,http://localhost:9090/paciente/6000246,1,0,0
+1716837790606,0,Get Paciente,200,OK,Thread Group 1-37,text,true,,1330,133,1,1,http://localhost:9090/paciente/6000247,0,0,0
+1716837790851,1,Get Paciente,200,OK,Thread Group 1-38,text,true,,1347,133,1,1,http://localhost:9090/paciente/6000248,1,0,0
+1716837790853,1,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-38,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000249,0,0,0
+1716837790854,1,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-38,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000250,0,0,0
+1716837790855,3,Get Paciente,200,OK,Thread Group 1-38,text,true,,1359,133,1,1,http://localhost:9090/paciente/6000251,3,0,0
+1716837790858,0,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-38,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000252,0,0,0
+1716837791101,3,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-39,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000253,0,0,0
+1716837791105,2,Get Paciente,200,OK,Thread Group 1-39,text,true,,1272,133,1,1,http://localhost:9090/paciente/6000254,2,0,0
+1716837791107,1,Get Paciente,200,OK,Thread Group 1-39,text,true,,1421,133,1,1,http://localhost:9090/paciente/6000255,1,0,0
+1716837791108,1,Get Paciente,200,OK,Thread Group 1-39,text,true,,1360,133,1,1,http://localhost:9090/paciente/6000256,1,0,0
+1716837791109,1,Get Paciente,200,OK,Thread Group 1-39,text,true,,1272,133,1,1,http://localhost:9090/paciente/6000257,1,0,0
+1716837791351,1,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-40,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000258,0,0,0
+1716837791352,3,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-40,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000259,0,0,0
+1716837791356,2,Get Paciente,200,OK,Thread Group 1-40,text,true,,1273,133,1,1,http://localhost:9090/paciente/6000260,2,0,0
+1716837791358,1,Get Paciente,200,OK,Thread Group 1-40,text,true,,1273,133,1,1,http://localhost:9090/paciente/6000261,1,0,0
+1716837791359,1,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-40,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000262,0,0,0
+1716837791600,3,Get Paciente,200,OK,Thread Group 1-41,text,true,,1271,133,1,1,http://localhost:9090/paciente/6000263,3,0,1
+1716837791603,1,Get Paciente,200,OK,Thread Group 1-41,text,true,,1273,133,1,1,http://localhost:9090/paciente/6000264,1,0,0
+1716837791604,0,Get Paciente,200,OK,Thread Group 1-41,text,true,,1273,133,1,1,http://localhost:9090/paciente/6000265,0,0,0
+1716837791604,1,Get Paciente,200,OK,Thread Group 1-41,text,true,,1334,133,1,1,http://localhost:9090/paciente/6000266,1,0,0
+1716837791605,0,Get Paciente,200,OK,Thread Group 1-41,text,true,,1272,133,1,1,http://localhost:9090/paciente/6000267,0,0,0
+1716837791850,2,Get Paciente,200,OK,Thread Group 1-42,text,true,,1272,133,1,1,http://localhost:9090/paciente/6000269,2,0,1
+1716837791852,1,Get Paciente,200,OK,Thread Group 1-42,text,true,,1273,133,1,1,http://localhost:9090/paciente/6000270,1,0,0
+1716837791853,0,Get Paciente,200,OK,Thread Group 1-42,text,true,,1287,133,1,1,http://localhost:9090/paciente/6000271,0,0,0
+1716837791853,1,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-42,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000272,0,0,0
+1716837791854,3,Get Paciente,200,OK,Thread Group 1-42,text,true,,1352,133,1,1,http://localhost:9090/paciente/6000273,3,0,0
+1716837792101,1,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-43,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000274,0,0,0
+1716837792102,3,Get Paciente,200,OK,Thread Group 1-43,text,true,,1359,133,1,1,http://localhost:9090/paciente/6000276,3,0,0
+1716837792105,1,Get Paciente,200,OK,Thread Group 1-43,text,true,,1272,133,1,1,http://localhost:9090/paciente/6000277,1,0,0
+1716837792106,0,Get Paciente,200,OK,Thread Group 1-43,text,true,,1338,133,1,1,http://localhost:9090/paciente/6000279,0,0,0
+1716837792106,1,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-43,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000280,0,0,0
+1716837792351,4,Get Paciente,200,OK,Thread Group 1-44,text,true,,1339,133,1,1,http://localhost:9090/paciente/6000281,4,0,0
+1716837792355,1,Get Paciente,200,OK,Thread Group 1-44,text,true,,1313,133,1,1,http://localhost:9090/paciente/6000282,1,0,0
+1716837792356,1,Get Paciente,200,OK,Thread Group 1-44,text,true,,1360,133,1,1,http://localhost:9090/paciente/6000283,1,0,0
+1716837792357,0,Get Paciente,200,OK,Thread Group 1-44,text,true,,1338,133,1,1,http://localhost:9090/paciente/6000284,0,0,0
+1716837792357,2,Get Paciente,200,OK,Thread Group 1-44,text,true,,1353,133,1,1,http://localhost:9090/paciente/6000285,2,0,0
+1716837792602,2,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-45,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000286,0,0,0
+1716837792604,1,Get Paciente,200,OK,Thread Group 1-45,text,true,,1360,133,1,1,http://localhost:9090/paciente/6000287,1,0,0
+1716837792605,3,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-45,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000288,0,0,0
+1716837792608,1,Get Paciente,200,OK,Thread Group 1-45,text,true,,1373,133,1,1,http://localhost:9090/paciente/6000289,1,0,0
+1716837792609,1,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-45,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000290,0,0,0
+1716837792852,3,Get Paciente,200,OK,Thread Group 1-46,text,true,,1373,133,1,1,http://localhost:9090/paciente/6000291,3,0,0
+1716837792855,1,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-46,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000292,0,0,0
+1716837792856,2,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-46,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000293,0,0,0
+1716837792858,3,Get Paciente,200,OK,Thread Group 1-46,text,true,,1273,133,1,1,http://localhost:9090/paciente/6000294,3,0,0
+1716837792861,0,Get Paciente,200,OK,Thread Group 1-46,text,true,,1281,133,1,1,http://localhost:9090/paciente/6000295,0,0,0
+1716837793100,1,Get Paciente,200,OK,Thread Group 1-47,text,true,,1360,133,1,1,http://localhost:9090/paciente/6000296,1,0,0
+1716837793102,0,Get Paciente,200,OK,Thread Group 1-47,text,true,,1421,133,1,1,http://localhost:9090/paciente/6000297,0,0,0
+1716837793102,1,Get Paciente,200,OK,Thread Group 1-47,text,true,,1360,133,1,1,http://localhost:9090/paciente/6000299,1,0,0
+1716837793103,0,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-47,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000302,0,0,0
+1716837793103,3,Get Paciente,200,OK,Thread Group 1-47,text,true,,1350,133,1,1,http://localhost:9090/paciente/6000304,3,0,0
+1716837793350,2,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-48,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000306,0,0,1
+1716837793353,3,Get Paciente,200,OK,Thread Group 1-48,text,true,,1391,133,1,1,http://localhost:9090/paciente/6000307,3,0,0
+1716837793356,1,Get Paciente,200,OK,Thread Group 1-48,text,true,,1355,133,1,1,http://localhost:9090/paciente/6000308,1,0,0
+1716837793357,2,Get Paciente,200,OK,Thread Group 1-48,text,true,,1266,133,1,1,http://localhost:9090/paciente/6000309,2,0,0
+1716837793359,1,Get Paciente,200,OK,Thread Group 1-48,text,true,,1260,133,1,1,http://localhost:9090/paciente/6000310,1,0,0
+1716837793600,2,Get Paciente,200,OK,Thread Group 1-49,text,true,,1351,133,1,1,http://localhost:9090/paciente/6000312,2,0,1
+1716837793602,1,Get Paciente,200,OK,Thread Group 1-49,text,true,,1260,133,1,1,http://localhost:9090/paciente/6000318,1,0,0
+1716837793603,0,Get Paciente,200,OK,Thread Group 1-49,text,true,,1336,133,1,1,http://localhost:9090/paciente/6000319,0,0,0
+1716837793604,0,Get Paciente,200,OK,Thread Group 1-49,text,true,,1325,133,1,1,http://localhost:9090/paciente/6000320,0,0,0
+1716837793604,1,Get Paciente,200,OK,Thread Group 1-49,text,true,,1383,133,1,1,http://localhost:9090/paciente/6000322,1,0,0
+1716837793851,1,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-50,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000324,0,0,0
+1716837793852,1,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-50,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000325,0,0,0
+1716837793853,3,Get Paciente,200,OK,Thread Group 1-50,text,true,,1334,133,1,1,http://localhost:9090/paciente/6000326,3,0,0
+1716837793856,3,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-50,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000327,0,0,0
+1716837793859,1,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-50,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000328,0,0,0
+1716837794101,3,Get Paciente,200,OK,Thread Group 1-51,text,true,,1371,133,1,1,http://localhost:9090/paciente/6000329,3,0,0
+1716837794104,1,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-51,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000330,0,0,0
+1716837794105,3,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-51,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000331,0,0,1
+1716837794108,3,Get Paciente,200,OK,Thread Group 1-51,text,true,,1342,133,1,1,http://localhost:9090/paciente/6000332,3,0,1
+1716837794111,0,Get Paciente,200,OK,Thread Group 1-51,text,true,,1359,133,1,1,http://localhost:9090/paciente/6000333,0,0,0
+1716837794351,1,Get Paciente,200,OK,Thread Group 1-52,text,true,,1334,133,1,1,http://localhost:9090/paciente/6000334,1,0,0
+1716837794352,1,Get Paciente,200,OK,Thread Group 1-52,text,true,,1385,133,1,1,http://localhost:9090/paciente/6000335,1,0,0
+1716837794353,1,Get Paciente,200,OK,Thread Group 1-52,text,true,,1360,133,1,1,http://localhost:9090/paciente/6000336,1,0,0
+1716837794354,0,Get Paciente,200,OK,Thread Group 1-52,text,true,,1362,133,1,1,http://localhost:9090/paciente/6000337,0,0,0
+1716837794354,1,Get Paciente,200,OK,Thread Group 1-52,text,true,,1332,133,1,1,http://localhost:9090/paciente/6000340,1,0,0
+1716837794602,2,Get Paciente,200,OK,Thread Group 1-53,text,true,,1323,133,1,1,http://localhost:9090/paciente/6000341,2,0,0
+1716837794604,0,Get Paciente,200,OK,Thread Group 1-53,text,true,,1266,133,1,1,http://localhost:9090/paciente/6000342,0,0,0
+1716837794604,1,Get Paciente,200,OK,Thread Group 1-53,text,true,,1345,133,1,1,http://localhost:9090/paciente/6000343,1,0,0
+1716837794605,1,Get Paciente,200,OK,Thread Group 1-53,text,true,,1326,133,1,1,http://localhost:9090/paciente/6000344,1,0,0
+1716837794606,0,Get Paciente,200,OK,Thread Group 1-53,text,true,,1362,133,1,1,http://localhost:9090/paciente/6000345,0,0,0
+1716837794851,2,Get Paciente,200,OK,Thread Group 1-54,text,true,,1323,133,1,1,http://localhost:9090/paciente/6000346,2,0,1
+1716837794853,1,Get Paciente,200,OK,Thread Group 1-54,text,true,,1358,133,1,1,http://localhost:9090/paciente/6000347,1,0,0
+1716837794854,0,Get Paciente,200,OK,Thread Group 1-54,text,true,,1338,133,1,1,http://localhost:9090/paciente/6000348,0,0,0
+1716837794854,3,Get Paciente,200,OK,Thread Group 1-54,text,true,,1351,133,1,1,http://localhost:9090/paciente/6000349,3,0,0
+1716837794857,1,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-54,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000351,0,0,0
+1716837795100,2,Get Paciente,200,OK,Thread Group 1-55,text,true,,1374,133,1,1,http://localhost:9090/paciente/6000352,2,0,1
+1716837795102,1,Get Paciente,200,OK,Thread Group 1-55,text,true,,1357,133,1,1,http://localhost:9090/paciente/6000353,1,0,0
+1716837795103,3,Get Paciente,200,OK,Thread Group 1-55,text,true,,1378,133,1,1,http://localhost:9090/paciente/6000354,3,0,0
+1716837795106,1,Get Paciente,200,OK,Thread Group 1-55,text,true,,1343,133,1,1,http://localhost:9090/paciente/6000355,1,0,0
+1716837795107,0,Get Paciente,200,OK,Thread Group 1-55,text,true,,1359,133,1,1,http://localhost:9090/paciente/6000356,0,0,0
+1716837795350,2,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-56,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000357,0,0,1
+1716837795352,1,Get Paciente,200,OK,Thread Group 1-56,text,true,,1260,133,1,1,http://localhost:9090/paciente/6000358,1,0,0
+1716837795353,0,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-56,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000359,0,0,0
+1716837795354,2,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-56,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000360,0,0,0
+1716837795356,2,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-56,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000361,0,0,0
+1716837795600,4,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-57,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000363,0,0,1
+1716837795604,2,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-57,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000365,0,0,0
+1716837795606,3,Get Paciente,200,OK,Thread Group 1-57,text,true,,1355,133,1,1,http://localhost:9090/paciente/6000366,3,0,0
+1716837795609,0,Get Paciente,200,OK,Thread Group 1-57,text,true,,1338,133,1,1,http://localhost:9090/paciente/6000368,0,0,0
+1716837795609,2,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-57,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000369,0,0,0
+1716837795851,1,Get Paciente,200,OK,Thread Group 1-58,text,true,,1340,133,1,1,http://localhost:9090/paciente/6000370,1,0,0
+1716837795852,1,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-58,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000371,0,0,0
+1716837795854,2,Get Paciente,200,OK,Thread Group 1-58,text,true,,1325,133,1,1,http://localhost:9090/paciente/6000372,2,0,0
+1716837795856,0,Get Paciente,200,OK,Thread Group 1-58,text,true,,1326,133,1,1,http://localhost:9090/paciente/6000373,0,0,0
+1716837795856,1,Get Paciente,200,OK,Thread Group 1-58,text,true,,1377,133,1,1,http://localhost:9090/paciente/6000374,1,0,0
+1716837796101,2,Get Paciente,200,OK,Thread Group 1-59,text,true,,1329,133,1,1,http://localhost:9090/paciente/6000376,2,0,1
+1716837796103,1,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-59,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000377,0,0,0
+1716837796104,3,Get Paciente,200,OK,Thread Group 1-59,text,true,,1336,133,1,1,http://localhost:9090/paciente/6000378,3,0,0
+1716837796107,0,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-59,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000379,0,0,0
+1716837796107,2,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-59,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000380,0,0,1
+1716837796350,4,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-60,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000381,0,0,0
+1716837796354,2,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-60,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000382,0,0,0
+1716837796356,3,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-60,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000383,0,0,1
+1716837796359,2,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-60,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000384,0,0,0
+1716837796361,2,Get Paciente,200,OK,Thread Group 1-60,text,true,,1311,133,1,1,http://localhost:9090/paciente/6000385,2,0,0
+1716837796601,2,Get Paciente,200,OK,Thread Group 1-61,text,true,,1362,133,1,1,http://localhost:9090/paciente/6000386,2,0,1
+1716837796603,1,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-61,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000388,0,0,0
+1716837796604,3,Get Paciente,200,OK,Thread Group 1-61,text,true,,1364,133,1,1,http://localhost:9090/paciente/6000389,3,0,0
+1716837796607,0,Get Paciente,200,OK,Thread Group 1-61,text,true,,1352,133,1,1,http://localhost:9090/paciente/6000390,0,0,0
+1716837796607,1,Get Paciente,200,OK,Thread Group 1-61,text,true,,1353,133,1,1,http://localhost:9090/paciente/6000391,1,0,0
+1716837796850,2,Get Paciente,200,OK,Thread Group 1-62,text,true,,1386,133,1,1,http://localhost:9090/paciente/6000392,2,0,1
+1716837796852,1,Get Paciente,200,OK,Thread Group 1-62,text,true,,1294,133,1,1,http://localhost:9090/paciente/6000393,1,0,0
+1716837796853,0,Get Paciente,200,OK,Thread Group 1-62,text,true,,1375,133,1,1,http://localhost:9090/paciente/6000394,0,0,0
+1716837796854,0,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-62,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000395,0,0,0
+1716837796855,2,Get Paciente,200,OK,Thread Group 1-62,text,true,,1377,133,1,1,http://localhost:9090/paciente/6000396,2,0,0
+1716837797100,1,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-63,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000397,0,0,0
+1716837797102,2,Get Paciente,200,OK,Thread Group 1-63,text,true,,1385,133,1,1,http://localhost:9090/paciente/6000399,2,0,0
+1716837797104,1,Get Paciente,200,OK,Thread Group 1-63,text,true,,1370,133,1,1,http://localhost:9090/paciente/6000400,1,0,0
+1716837797105,1,Get Paciente,200,OK,Thread Group 1-63,text,true,,1365,133,1,1,http://localhost:9090/paciente/6000401,1,0,0
+1716837797106,0,Get Paciente,200,OK,Thread Group 1-63,text,true,,1375,133,1,1,http://localhost:9090/paciente/6000402,0,0,0
+1716837797350,1,Get Paciente,200,OK,Thread Group 1-64,text,true,,1349,133,1,1,http://localhost:9090/paciente/6000403,1,0,0
+1716837797351,1,Get Paciente,200,OK,Thread Group 1-64,text,true,,1355,133,1,1,http://localhost:9090/paciente/6000404,1,0,0
+1716837797352,2,Get Paciente,200,OK,Thread Group 1-64,text,true,,1273,133,1,1,http://localhost:9090/paciente/6000405,2,0,0
+1716837797354,1,Get Paciente,200,OK,Thread Group 1-64,text,true,,1331,133,1,1,http://localhost:9090/paciente/6000406,1,0,0
+1716837797355,0,Get Paciente,200,OK,Thread Group 1-64,text,true,,1370,133,1,1,http://localhost:9090/paciente/6000407,0,0,0
+1716837797600,1,Get Paciente,200,OK,Thread Group 1-65,text,true,,1371,133,1,1,http://localhost:9090/paciente/6000408,1,0,0
+1716837797601,1,Get Paciente,200,OK,Thread Group 1-65,text,true,,1344,133,1,1,http://localhost:9090/paciente/6000409,1,0,0
+1716837797602,0,Get Paciente,200,OK,Thread Group 1-65,text,true,,1334,133,1,1,http://localhost:9090/paciente/6000410,0,0,0
+1716837797602,0,Get Paciente,200,OK,Thread Group 1-65,text,true,,1326,133,1,1,http://localhost:9090/paciente/6000411,0,0,0
+1716837797603,0,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-65,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000413,0,0,0
+1716837797850,2,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-66,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000414,0,0,1
+1716837797852,2,Get Paciente,200,OK,Thread Group 1-66,text,true,,1331,133,1,1,http://localhost:9090/paciente/6000415,2,0,0
+1716837797855,0,Get Paciente,200,OK,Thread Group 1-66,text,true,,1341,133,1,1,http://localhost:9090/paciente/6000416,0,0,0
+1716837797855,1,Get Paciente,200,OK,Thread Group 1-66,text,true,,1329,133,1,1,http://localhost:9090/paciente/6000417,1,0,0
+1716837797856,0,Get Paciente,200,OK,Thread Group 1-66,text,true,,1325,133,1,1,http://localhost:9090/paciente/6000418,0,0,0
+1716837798100,2,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-67,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000419,0,0,1
+1716837798102,4,Get Paciente,200,OK,Thread Group 1-67,text,true,,1317,133,1,1,http://localhost:9090/paciente/6000420,4,0,1
+1716837798106,1,Get Paciente,200,OK,Thread Group 1-67,text,true,,1356,133,1,1,http://localhost:9090/paciente/6000421,1,0,0
+1716837798107,1,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-67,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000422,0,0,0
+1716837798108,2,Get Paciente,200,OK,Thread Group 1-67,text,true,,1350,133,1,1,http://localhost:9090/paciente/6000423,2,0,0
+1716837798350,2,Get Paciente,200,OK,Thread Group 1-68,text,true,,1316,133,1,1,http://localhost:9090/paciente/6000424,2,0,1
+1716837798352,2,Get Paciente,200,OK,Thread Group 1-68,text,true,,1380,133,1,1,http://localhost:9090/paciente/6000425,2,0,0
+1716837798354,0,Get Paciente,200,OK,Thread Group 1-68,text,true,,1346,133,1,1,http://localhost:9090/paciente/6000426,0,0,0
+1716837798354,1,Get Paciente,200,OK,Thread Group 1-68,text,true,,1372,133,1,1,http://localhost:9090/paciente/6000428,1,0,0
+1716837798355,1,Get Paciente,200,OK,Thread Group 1-68,text,true,,1352,133,1,1,http://localhost:9090/paciente/6000429,1,0,0
+1716837798600,1,Get Paciente,200,OK,Thread Group 1-69,text,true,,1372,133,1,1,http://localhost:9090/paciente/6000430,1,0,0
+1716837798602,0,Get Paciente,200,OK,Thread Group 1-69,text,true,,1387,133,1,1,http://localhost:9090/paciente/6000431,0,0,0
+1716837798602,1,Get Paciente,200,OK,Thread Group 1-69,text,true,,1364,133,1,1,http://localhost:9090/paciente/6000433,1,0,0
+1716837798603,3,Get Paciente,200,OK,Thread Group 1-69,text,true,,1372,133,1,1,http://localhost:9090/paciente/6000434,3,0,0
+1716837798606,0,Get Paciente,200,OK,Thread Group 1-69,text,true,,1364,133,1,1,http://localhost:9090/paciente/6000436,0,0,0
+1716837798850,2,Get Paciente,200,OK,Thread Group 1-70,text,true,,1416,133,1,1,http://localhost:9090/paciente/6000441,2,0,1
+1716837798852,1,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-70,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000442,0,0,0
+1716837798853,1,Get Paciente,200,OK,Thread Group 1-70,text,true,,1374,133,1,1,http://localhost:9090/paciente/6000443,1,0,0
+1716837798854,1,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-70,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000444,0,0,0
+1716837798855,2,Get Paciente,200,OK,Thread Group 1-70,text,true,,1259,133,1,1,http://localhost:9090/paciente/6000445,2,0,0
+1716837799100,1,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-71,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000446,0,0,0
+1716837799102,3,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-71,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000447,0,0,0
+1716837799105,3,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-71,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000448,0,0,0
+1716837799108,3,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-71,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000449,0,0,0
+1716837799111,2,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-71,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000450,0,0,0
+1716837799350,3,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-72,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000451,0,0,0
+1716837799353,3,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-72,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000452,0,0,1
+1716837799356,3,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-72,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000453,0,0,0
+1716837799359,2,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-72,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000454,0,0,0
+1716837799362,2,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-72,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000455,0,0,0
+1716837799600,2,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-73,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000456,0,0,0
+1716837799603,1,Get Paciente,200,OK,Thread Group 1-73,text,true,,1340,133,1,1,http://localhost:9090/paciente/6000457,1,0,0
+1716837799604,1,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-73,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000458,0,0,0
+1716837799605,2,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-73,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000460,0,0,0
+1716837799607,1,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-73,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000462,0,0,0
+1716837799850,3,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-74,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000463,0,0,0
+1716837799853,2,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-74,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000464,0,0,0
+1716837799856,1,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-74,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000465,0,0,0
+1716837799857,2,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-74,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000466,0,0,1
+1716837799859,2,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-74,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000467,0,0,0
+1716837800100,3,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-75,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000468,0,0,0
+1716837800103,3,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-75,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000469,0,0,0
+1716837800106,2,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-75,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000470,0,0,0
+1716837800108,3,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-75,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000471,0,0,0
+1716837800111,3,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-75,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000472,0,0,0
+1716837800350,3,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-76,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000473,0,0,0
+1716837800354,2,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-76,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000474,0,0,0
+1716837800356,3,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-76,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000475,0,0,0
+1716837800359,2,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-76,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000476,0,0,0
+1716837800361,3,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-76,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000477,0,0,0
+1716837800599,4,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-77,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000478,0,0,1
+1716837800603,3,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-77,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000479,0,0,0
+1716837800606,2,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-77,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000480,0,0,0
+1716837800608,3,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-77,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000481,0,0,0
+1716837800611,3,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-77,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000482,0,0,1
+1716837800849,3,Get Paciente,200,OK,Thread Group 1-78,text,true,,1311,133,1,1,http://localhost:9090/paciente/6000483,3,0,0
+1716837800852,1,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-78,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000484,0,0,0
+1716837800853,3,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-78,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000485,0,0,0
+1716837800856,3,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-78,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000486,0,0,0
+1716837800859,3,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-78,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000487,0,0,1
+1716837801100,3,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-79,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000489,0,0,0
+1716837801103,3,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-79,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000490,0,0,0
+1716837801106,2,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-79,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000491,0,0,0
+1716837801109,2,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-79,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000492,0,0,0
+1716837801111,3,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-79,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000494,0,0,0
+1716837801352,3,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-80,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000495,0,0,0
+1716837801355,3,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-80,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000496,0,0,0
+1716837801358,2,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-80,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000497,0,0,0
+1716837801360,2,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-80,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000498,0,0,0
+1716837801363,2,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-80,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000499,0,0,0
+1716837801602,3,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-81,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000500,0,0,0
+1716837801605,1,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-81,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000501,0,0,0
+1716837801606,3,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-81,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000502,0,0,1
+1716837801609,1,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-81,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000503,0,0,0
+1716837801611,1,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-81,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000504,0,0,0
+1716837801851,3,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-82,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000505,0,0,0
+1716837801854,2,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-82,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000506,0,0,0
+1716837801857,2,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-82,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000507,0,0,0
+1716837801859,2,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-82,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000508,0,0,0
+1716837801861,2,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-82,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000509,0,0,1
+1716837802101,3,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-83,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000510,0,0,0
+1716837802104,1,Get Paciente,200,OK,Thread Group 1-83,text,true,,1295,133,1,1,http://localhost:9090/paciente/6000511,1,0,0
+1716837802105,0,Get Paciente,200,OK,Thread Group 1-83,text,true,,1386,133,1,1,http://localhost:9090/paciente/6000512,0,0,0
+1716837802106,0,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-83,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000513,0,0,0
+1716837802106,2,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-83,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000515,0,0,0
+1716837802351,3,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-84,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000516,0,0,0
+1716837802354,2,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-84,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000517,0,0,0
+1716837802356,3,Get Paciente,200,OK,Thread Group 1-84,text,true,,1352,133,1,1,http://localhost:9090/paciente/6000518,3,0,0
+1716837802359,0,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-84,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000519,0,0,0
+1716837802360,2,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-84,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000520,0,0,0
+1716837802601,3,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-85,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000521,0,0,0
+1716837802605,2,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-85,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000522,0,0,0
+1716837802607,3,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-85,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000523,0,0,1
+1716837802610,2,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-85,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000524,0,0,0
+1716837802612,3,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-85,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000525,0,0,1
+1716837802851,4,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-86,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000526,0,0,1
+1716837802855,2,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-86,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000527,0,0,0
+1716837802858,2,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-86,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000528,0,0,0
+1716837802860,2,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-86,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000530,0,0,0
+1716837802862,3,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-86,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000531,0,0,1
+1716837803101,3,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-87,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000532,0,0,0
+1716837803104,2,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-87,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000533,0,0,0
+1716837803106,2,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-87,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000534,0,0,0
+1716837803108,2,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-87,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000535,0,0,1
+1716837803110,2,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-87,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000536,0,0,0
+1716837803350,4,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-88,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000537,0,0,1
+1716837803354,2,Get Paciente,200,OK,Thread Group 1-88,text,true,,1312,133,1,1,http://localhost:9090/paciente/6000538,2,0,0
+1716837803356,1,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-88,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000540,0,0,0
+1716837803357,2,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-88,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000541,0,0,0
+1716837803359,2,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-88,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000542,0,0,0
+1716837803600,3,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-89,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000543,0,0,1
+1716837803603,2,Get Paciente,200,OK,Thread Group 1-89,text,true,,1325,133,1,1,http://localhost:9090/paciente/6000545,2,0,0
+1716837803605,0,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-89,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000550,0,0,0
+1716837803605,2,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-89,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000551,0,0,1
+1716837803607,2,Get Paciente,200,OK,Thread Group 1-89,text,true,,1335,133,1,1,http://localhost:9090/paciente/6000553,2,0,0
+1716837803850,2,Get Paciente,200,OK,Thread Group 1-90,text,true,,1326,133,1,1,http://localhost:9090/paciente/6000554,2,0,1
+1716837803852,1,Get Paciente,200,OK,Thread Group 1-90,text,true,,1337,133,1,1,http://localhost:9090/paciente/6000555,1,0,0
+1716837803853,3,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-90,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000556,0,0,0
+1716837803856,1,Get Paciente,200,OK,Thread Group 1-90,text,true,,1329,133,1,1,http://localhost:9090/paciente/6000557,1,0,0
+1716837803857,2,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-90,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000558,0,0,0
+1716837804102,1,Get Paciente,200,OK,Thread Group 1-91,text,true,,1271,133,1,1,http://localhost:9090/paciente/6000559,1,0,0
+1716837804103,1,Get Paciente,200,OK,Thread Group 1-91,text,true,,1334,133,1,1,http://localhost:9090/paciente/6000560,1,0,0
+1716837804104,1,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-91,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000561,0,0,0
+1716837804105,2,Get Paciente,200,OK,Thread Group 1-91,text,true,,1356,133,1,1,http://localhost:9090/paciente/6000562,2,0,0
+1716837804107,1,Get Paciente,200,OK,Thread Group 1-91,text,true,,1303,133,1,1,http://localhost:9090/paciente/6000563,1,0,0
+1716837804352,1,Get Paciente,200,OK,Thread Group 1-92,text,true,,1371,133,1,1,http://localhost:9090/paciente/6000564,1,0,0
+1716837804353,2,Get Paciente,200,OK,Thread Group 1-92,text,true,,1272,133,1,1,http://localhost:9090/paciente/6000566,2,0,0
+1716837804355,1,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-92,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000567,0,0,0
+1716837804356,3,Get Paciente,200,OK,Thread Group 1-92,text,true,,1272,133,1,1,http://localhost:9090/paciente/6000568,3,0,0
+1716837804359,1,Get Paciente,200,OK,Thread Group 1-92,text,true,,1397,133,1,1,http://localhost:9090/paciente/6000569,1,0,0
+1716837804601,2,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-93,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000570,0,0,0
+1716837804603,3,Get Paciente,200,OK,Thread Group 1-93,text,true,,1313,133,1,1,http://localhost:9090/paciente/6000571,2,0,0
+1716837804606,0,Get Paciente,200,OK,Thread Group 1-93,text,true,,1334,133,1,1,http://localhost:9090/paciente/6000572,0,0,0
+1716837804606,1,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-93,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000573,0,0,0
+1716837804607,2,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-93,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000574,0,0,0
+1716837804851,3,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-94,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000575,0,0,0
+1716837804854,4,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-94,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000576,0,0,1
+1716837804858,3,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-94,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000577,0,0,0
+1716837804861,2,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-94,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000578,0,0,0
+1716837804863,2,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-94,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000579,0,0,0
+1716837805101,3,Get Paciente,200,OK,Thread Group 1-95,text,true,,1348,133,1,1,http://localhost:9090/paciente/6000580,3,0,1
+1716837805104,1,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-95,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000581,0,0,0
+1716837805105,3,Get Paciente,200,OK,Thread Group 1-95,text,true,,1314,133,1,1,http://localhost:9090/paciente/6000582,2,0,1
+1716837805108,0,Get Paciente,200,OK,Thread Group 1-95,text,true,,1407,133,1,1,http://localhost:9090/paciente/6000585,0,0,0
+1716837805108,1,Get Paciente,200,OK,Thread Group 1-95,text,true,,1388,133,1,1,http://localhost:9090/paciente/6000586,1,0,0
+1716837805351,2,Get Paciente,200,OK,Thread Group 1-96,text,true,,1323,133,1,1,http://localhost:9090/paciente/6000587,2,0,1
+1716837805353,1,Get Paciente,200,OK,Thread Group 1-96,text,true,,1303,133,1,1,http://localhost:9090/paciente/6000588,1,0,0
+1716837805354,0,Get Paciente,200,OK,Thread Group 1-96,text,true,,1399,133,1,1,http://localhost:9090/paciente/6000590,0,0,0
+1716837805354,1,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-96,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000591,0,0,0
+1716837805356,3,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-96,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000592,0,0,0
+1716837805601,3,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-97,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000593,0,0,0
+1716837805604,1,Get Paciente,200,OK,Thread Group 1-97,text,true,,1307,133,1,1,http://localhost:9090/paciente/6000594,1,0,0
+1716837805605,1,Get Paciente,200,OK,Thread Group 1-97,text,true,,1372,133,1,1,http://localhost:9090/paciente/6000595,1,0,0
+1716837805606,0,Get Paciente,200,OK,Thread Group 1-97,text,true,,1332,133,1,1,http://localhost:9090/paciente/6000596,0,0,0
+1716837805606,1,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-97,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000597,0,0,0
+1716837805851,3,Get Paciente,200,OK,Thread Group 1-98,text,true,,1371,133,1,1,http://localhost:9090/paciente/6000598,3,0,0
+1716837805854,1,Get Paciente,200,OK,Thread Group 1-98,text,true,,1327,133,1,1,http://localhost:9090/paciente/6000599,1,0,0
+1716837805855,1,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-98,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000600,0,0,0
+1716837805856,2,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-98,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000601,0,0,0
+1716837805858,3,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-98,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000602,0,0,1
+1716837806100,4,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-99,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000603,0,0,1
+1716837806104,2,Get Paciente,200,OK,Thread Group 1-99,text,true,,1348,133,1,1,http://localhost:9090/paciente/6000604,2,0,0
+1716837806106,1,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-99,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000605,0,0,0
+1716837806107,3,Get Paciente,200,OK,Thread Group 1-99,text,true,,1342,133,1,1,http://localhost:9090/paciente/6000606,3,0,0
+1716837806110,1,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-99,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000609,0,0,0
+1716837806351,3,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-100,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000611,0,0,0
+1716837806354,3,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-100,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000612,0,0,1
+1716837806357,3,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-100,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000613,0,0,0
+1716837806360,2,Get Paciente,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: localhost:9090 failed to respond,Thread Group 1-100,text,false,,2067,0,1,1,http://localhost:9090/paciente/6000614,0,0,0
+1716837806362,3,Get Paciente,200,OK,Thread Group 1-100,text,true,,1375,133,1,1,http://localhost:9090/paciente/6000615,3,0,1

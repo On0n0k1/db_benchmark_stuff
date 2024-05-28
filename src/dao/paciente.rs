@@ -1,8 +1,9 @@
 #![allow(non_snake_case)]
-use crate::Error;
-use log::info;
+use crate::{globals, Error};
 use serde::{Deserialize, Serialize};
-use sqlx::{pool::PoolConnection, Mssql, MssqlPool};
+use tiberius::{Client, Config, Row};
+use tokio::net::TcpStream;
+use tokio_util::compat::TokioAsyncWriteCompatExt;
 
 #[derive(sqlx::FromRow, sqlx::Decode)]
 pub struct PacienteTable {
@@ -288,12 +289,102 @@ pub struct Paciente {
     PASSAPORTE: Option<String>,
 }
 
-impl Paciente {
-    pub async fn read(id: i32, pool: &MssqlPool) -> Result<Self, Error> {
-        let mut conn: PoolConnection<Mssql> = pool.acquire().await.or_else(Error::sqlx)?;
-        let paciente: PacienteTable = sqlx::query_as(
-            r#"
-        SELECT 
+impl From<Row> for Paciente {
+    fn from(row: Row) -> Self {
+        let ID: i32 = row.get("ID").unwrap();
+        let NOME: String = row.get::<&str, &str>("NOME").unwrap().to_string();
+        let SEXO: String = row.get::<&str, &str>("SEXO").unwrap().to_string();
+        let CARTEIRA: String = row.get::<&str, &str>("CARTEIRA").unwrap().to_string();
+        let IDADE: i32 = row.get("IDADE").unwrap();
+        let IMPRIMECARTEIRA: String = row
+            .get::<&str, &str>("IMPRIMECARTEIRA")
+            .map(str::to_string)
+            .unwrap();
+        let INATIVO: String = row
+            .get::<&str, &str>("INATIVO")
+            .map(str::to_string)
+            .unwrap();
+        let BLOQUEADO: String = row
+            .get::<&str, &str>("BLOQUEADO")
+            .map(str::to_string)
+            .unwrap();
+        let EH_DIABETICO: String = row
+            .get::<&str, &str>("EH_DIABETICO")
+            .map(str::to_string)
+            .unwrap();
+        let ENDERECO: Option<String> = row.get::<&str, &str>("ENDERECO").map(str::to_string);
+        let BAIRRO: Option<String> = row.get::<&str, &str>("BAIRRO").map(str::to_string);
+        let CEP: Option<String> = row.get::<&str, &str>("CEP").map(str::to_string);
+        let CIDADE: Option<String> = row.get::<&str, &str>("CIDADE").map(str::to_string);
+        let ESTADO: Option<String> = row.get::<&str, &str>("ESTADO").map(str::to_string);
+        let TELEFONE: Option<String> = row.get::<&str, &str>("TELEFONE").map(str::to_string);
+        let CONTATO: Option<String> = row.get::<&str, &str>("CONTATO").map(str::to_string);
+        let CPF: Option<String> = row.get::<&str, &str>("CPF").map(str::to_string);
+        let IDENTIDADE: Option<String> = row.get::<&str, &str>("IDENTIDADE").map(str::to_string);
+        let ESTADOCIVIL: Option<String> = row.get::<&str, &str>("ESTADOCIVIL").map(str::to_string);
+        let GSRH: Option<String> = row.get::<&str, &str>("GSRH").map(str::to_string);
+        let CONVENIO: Option<String> = row.get::<&str, &str>("CONVENIO").map(str::to_string);
+        let PLANO: Option<String> = row.get::<&str, &str>("PLANO").map(str::to_string);
+        let TITULAR: Option<String> = row.get::<&str, &str>("TITULAR").map(str::to_string);
+        let NUMEROCART: Option<String> = row.get::<&str, &str>("NUMEROCART").map(str::to_string);
+        let EMAIL: Option<String> = row.get::<&str, &str>("EMAIL").map(str::to_string);
+        let OBSERVACAO: Option<String> = row.get::<&str, &str>("OBSERVACAO").map(str::to_string);
+        let CLASSIFICACAO: Option<i32> = row.get("CLASSIFICACAO");
+        let CODIGOEXTERNO: Option<String> =
+            row.get::<&str, &str>("CODIGOEXTERNO").map(str::to_string);
+        let MATRICULA: Option<String> = row.get::<&str, &str>("MATRICULA").map(str::to_string);
+        let NUMERO: Option<String> = row.get::<&str, &str>("NUMERO").map(str::to_string);
+        let MEDICO: Option<i32> = row.get("MEDICO");
+        let NACIONALIDADE: Option<String> =
+            row.get::<&str, &str>("NACIONALIDADE").map(str::to_string);
+        let ORIGEM: Option<String> = row.get::<&str, &str>("ORIGEM").map(str::to_string);
+        let CHAVE_SLINE: Option<String> = row.get::<&str, &str>("CHAVE_SLINE").map(str::to_string);
+        let NOME_FONETICO: String = row
+            .get::<&str, &str>("NOME_FONETICO")
+            .map(str::to_string)
+            .unwrap();
+        let COR: Option<String> = row.get::<&str, &str>("COR").map(str::to_string);
+        let OBS_CLINICA: Option<String> = row.get::<&str, &str>("OBS_CLINICA").map(str::to_string);
+        let NUMERO_CNS: Option<String> = row.get::<&str, &str>("NUMERO_CNS").map(str::to_string);
+        let NOME_PAI: Option<String> = row.get::<&str, &str>("NOME_PAI").map(str::to_string);
+        let NOME_MAE: Option<String> = row.get::<&str, &str>("NOME_MAE").map(str::to_string);
+        let COD_IBGE: Option<String> = row.get::<&str, &str>("COD_IBGE").map(str::to_string);
+        let DOCUMENTO_RESP: Option<String> =
+            row.get::<&str, &str>("DOCUMENTO_RESP").map(str::to_string);
+        let SEGUNDO_NOME: Option<String> =
+            row.get::<&str, &str>("SEGUNDO_NOME").map(str::to_string);
+        let CELULAR: Option<String> = row.get::<&str, &str>("CELULAR").map(str::to_string);
+        let LOCAL_TRABALHO: Option<String> =
+            row.get::<&str, &str>("LOCAL_TRABALHO").map(str::to_string);
+        let RACA: Option<String> = row.get::<&str, &str>("RACA").map(str::to_string);
+        let ESPECIE: Option<String> = row.get::<&str, &str>("ESPECIE").map(str::to_string);
+        let PROPRIETARIO: Option<String> =
+            row.get::<&str, &str>("PROPRIETARIO").map(str::to_string);
+        let COD_EMPRESA: Option<String> = row.get::<&str, &str>("COD_EMPRESA").map(str::to_string);
+        let COD_UNIDADE: Option<String> = row.get::<&str, &str>("COD_UNIDADE").map(str::to_string);
+        let EMPRESA: Option<i32> = row.get("EMPRESA");
+        let ESTRUTURA_EMPRESA: Option<i32> = row.get("ESTRUTURA_EMPRESA");
+        let ETNIA: Option<String> = row.get::<&str, &str>("ETNIA").map(str::to_string);
+        let TIPO_LOGRADOURO: Option<String> =
+            row.get::<&str, &str>("TIPO_LOGRADOURO").map(str::to_string);
+        let NUMERO_ENDERECO: Option<i32> = row.get("NUMERO_ENDERECO");
+        let COMPLEMENTO: Option<String> = row.get::<&str, &str>("COMPLEMENTO").map(str::to_string);
+        let NATURALIDADE: Option<String> =
+            row.get::<&str, &str>("NATURALIDADE").map(str::to_string);
+        let NOME_SOCIAL: Option<String> = row.get::<&str, &str>("NOME_SOCIAL").map(str::to_string);
+        let MOTIVO_BLOQUEIO: Option<String> =
+            row.get::<&str, &str>("MOTIVO_BLOQUEIO").map(str::to_string);
+        let CNH: Option<String> = row.get::<&str, &str>("CNH").map(str::to_string);
+        let CATEGORIA_CNH: Option<String> =
+            row.get::<&str, &str>("CATEGORIA_CNH").map(str::to_string);
+        let ENVIA_WHATSAPP: Option<String> =
+            row.get::<&str, &str>("ENVIA_WHATSAPP").map(str::to_string);
+        let WHATSAPP: Option<String> = row.get::<&str, &str>("WHATSAPP").map(str::to_string);
+        let NIF: Option<String> = row.get::<&str, &str>("NIF").map(str::to_string);
+        let COD_ESPECIE: Option<i32> = row.get("COD_ESPECIE");
+        let COD_RACA: Option<i32> = row.get("COD_RACA");
+        let PASSAPORTE: Option<String> = row.get::<&str, &str>("PASSAPORTE").map(str::to_string);
+        Self {
             ID,
             NOME,
             ENDERECO,
@@ -360,26 +451,22 @@ impl Paciente {
             NIF,
             COD_ESPECIE,
             COD_RACA,
-            PASSAPORTE
-         FROM PACIENTE WHERE ID = @P1;"#,
-        )
-        .bind(id)
-        .fetch_one(&mut conn)
-        .await
-        .or_else(Error::sqlx)?;
-        let paciente: Paciente = paciente.into();
-        Ok(paciente)
+            PASSAPORTE,
+        }
     }
+}
 
-    /// This doesn't work. Reminder not to use sqlx for making queries to ms sql servers next. It is unsupported and bugged...
-    pub async fn read_many(
-        quantity: i32,
-        offset: i32,
-        pool: &MssqlPool,
-    ) -> Result<Vec<Paciente>, Error> {
-        let mut conn: PoolConnection<Mssql> = pool.acquire().await.or_else(Error::sqlx)?;
-        let pacientes: Vec<PacienteTable> = sqlx::query_as(
-            r#"
+impl Paciente {
+    pub async fn tiberius_read(id: i32, config: &Config) -> Result<Self, Error> {
+        let tcp = TcpStream::connect(globals::db::ADDRESS)
+            .await
+            .or_else(Error::tcp_stream)?;
+        tcp.set_nodelay(true).unwrap();
+
+        let mut client = Client::connect(config.clone(), tcp.compat_write())
+            .await
+            .or_else(Error::client_connection)?;
+        let query = r#"
             SELECT 
                 ID,
                 NOME,
@@ -448,18 +535,13 @@ impl Paciente {
                 COD_ESPECIE,
                 COD_RACA,
                 PASSAPORTE
-            FROM PACIENTE 
-            ORDER BY ID ASC
-            OFFSET @P1 ROWS
-            FETCH NEXT @P2 ROWS ONLY;"#,
-        )
-        .bind(offset)
-        .bind(quantity)
-        .fetch_all(&mut conn)
-        .await
-        .or_else(Error::sqlx)?;
-        info!("Entries retrieved. Converting...");
-        let pacientes: Vec<Paciente> = pacientes.into_iter().map(Into::into).collect();
-        Ok(pacientes)
+            FROM PACIENTE WHERE ID = @P1;"#;
+        let stream: tiberius::QueryStream =
+            client.query(query, &[&id]).await.or_else(Error::query)?;
+        let row: Option<Row> = stream.into_row().await.or_else(Error::into_row)?;
+        match row {
+            None => Err(Error::NotFound),
+            Some(row) => Ok(row.into()),
+        }
     }
 }

@@ -36,7 +36,6 @@ async fn main() -> std::io::Result<()> {
             .app_data(web::Data::new(dao.clone()))
             .service(hello_world)
             .service(server::read_paciente::read_paciente)
-            .service(server::read_many_pacients::read_many_pacients)
     })
     .bind("0.0.0.0:9090")?
     .run()

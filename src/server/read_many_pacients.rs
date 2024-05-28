@@ -24,7 +24,6 @@ pub async fn read_many_pacients(
 
     let dao: Arc<Arc<Dao>> = dao.into_inner();
     let pacientes: Vec<Paciente> = Paciente::read_many(quantity, offset, dao.pool()).await?;
-    // let result: HttpResponse = HttpResponse::Ok().json(pacientes);
-    // Ok(result)
-    Ok(HttpResponse::Ok().finish())
+    let result: HttpResponse = HttpResponse::Ok().json(pacientes);
+    Ok(result)
 }
